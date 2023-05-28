@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import FetchData from "../utils/getLocation";
-import { handleButtonPress } from "../utils/handleClick";
+import FetchData from "../../utils/getLocation";
+import { handleButtonPress } from "../../utils/handleClick";
 import { useDispatch } from "react-redux";
-import { setApiData } from "../state/Actions";
+import { setApiData } from "../../state/Actions";
+import "./Info.css";
 
 export default function Info() {
   const [location, setLocation] = useState("");

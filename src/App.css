@@ -1,77 +1,30 @@
 body {
   background-image: url(https://picsum.photos/id/62/1920/1080);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
 }
 
 .app {
   display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  align-items: flex-start;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
-.weatherapp__search {
-  justify-content: flex-start;
-  align-items: start;
+.app__left_section {
+  margin: 1rem;
+  flex: 1;
 }
 
-.weatherapp__search button {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.weatherapp__content {
-  align-items: center;
-  justify-content: flex-start;
-  display: flex;
-  flex-direction: row;
-  color: white;
-  position: absolute;
-  margin-bottom: 4rem;
-  margin-left: 5rem;
-  bottom: 0;
-}
-
-.weatherapp__content h1 {
-  font-size: 100px;
-}
-
-.weatherapp__content h2 {
-  font-size: 60px;
-  font-weight: 400;
-}
-
-.weatherapp__content-location-time {
-  margin-left: 1rem;
-  margin-bottom: 1rem;
-  align-items: center;
-  /* display: flex; */
-  flex-direction: column;
-  line-height: 0;
-  /* bottom: ; */
-}
-
-.weatherapp__content-location-time p {
-  margin-top: -15px;
-}
-
-.weatherapp__content-icon img {
-  margin-left: -15px;
-  margin-top: -60px;
-  margin-bottom: 10px;
-  height: 160px;
-  width: 160px;
-}
-
-.weatherapp__content-icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.weatherapp__content-icon p {
-  margin-top: -40px;
-  margin-left: -20px;
+.app__right_section {
+  width: 40%;
+  /* flex: 1; */
+  /* border: 1px white solid; */
+  background: rgba(255, 255, 255, 0.35);
+  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  /* border-radius: 10px; */
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }

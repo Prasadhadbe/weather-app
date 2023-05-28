@@ -1,0 +1,10 @@
+.weatherapp__search {
+  justify-content: flex-start;
+  align-items: start;
+}
+
+.weatherapp__search button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
